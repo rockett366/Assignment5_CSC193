@@ -1,0 +1,44 @@
+<!-- Emily Mejia csc193 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fancify Shamcify</title>
+    <link rel="stylesheet" href="/main.css" />
+
+    <!-- link to your script file here -->
+    <script src="/fancifymytext.js"></script>
+  </head>
+  <body>
+    <h1>Fancify my Text</h1>
+    <!-- Your UI controls go here -->
+    <section>
+      <!-- input text-->
+      <fieldset class="fieldS">
+        <label>Text</label>
+        <textarea type="text" row="4" cols="30" id="txt"></textarea>
+      </fieldset>
+
+      <!-- text adjust buttons -->
+
+      <fieldset class="fieldS">
+        <label>Fancify</label>
+
+        <button onclick="bigger()">Bigger!</button>
+
+        <input
+          type="radio"
+          onchange="fancyChange()"
+          name="txtStyle"
+          id="fancy"
+        />
+        <label>FancyShmancy</label>
+        <br />
+
+        <input type="radio" onchange="fancyChange()" name="txtStyle" />
+        <label>BoringBetty</label>
+
+        <button onclick="moo()">Moo</button>
+      </fieldset>
+    </section>
+  </body>
+</html>
